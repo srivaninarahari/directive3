@@ -1,0 +1,18 @@
+<div class="container">
+  <h1> Students Names </h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Number </th>
+        <th>Names</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- STRUCTURAL  ATTRIBUTE TO DISPLAY ROWSS -->
+      <tr *ngFor="let person of PersonNames; let i = index" appTable [rowIndex]= "i" >
+        <td>{{i+1}} </td> <!-- NUMBER OF  ROWS -->
+        <td>{{person}} </td><!-- NAMES -->
+      </tr>
+    </tbody>
+  </table>
+</div>
